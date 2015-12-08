@@ -1,0 +1,7 @@
+--require should
+--require bluebird
+--reporter spec
+--ui bdd
+--recursive
+--slow 300
+--timeout 10000

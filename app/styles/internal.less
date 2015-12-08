@@ -1,0 +1,196 @@
+.searchHolder input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #f4f4f4;
+  height: 32px;
+  padding-left: 34px;
+  margin: 2px 0 1px 0;
+  font-size: 12px;
+  color: #626262;
+  font-weight: 300;
+}
+
+.searchHolder {
+  position: relative;
+}
+
+.searchHolder .icon-search {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  color: #d8d8d8;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'wp-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  heigth: 100%;
+}
+
+.gdriveapp {
+  position: relative;
+  margin-top: 2px;
+}
+
+
+.itemsContent {
+  display: flex;
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
+  width: 200px;
+  margin: 12px auto;
+  align-items: center;
+  align-content: center;
+  height: 24px;
+  overflow: hidden;
+}
+
+.itemsContent .item:not(:last-child) {
+  border-right: 1px solid #b1b1b1;
+}
+.recent .recent, .shared .shared {
+  color: #fff;
+  background: #666;
+}
+.itemsContent .item {
+  flex-grow: 1;
+  color: #626262;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  line-height: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.gdrivefiles {
+  position: relative;
+}
+
+.gdrivefiles .itemsContent {
+  position: relative;
+}
+
+.gdrivefile.shared.sharedWithMe, .gdrivefile.recent:not(.sharedWithMe) {
+  display: flex;
+}
+.gdrivefile:last-child {
+  border-bottom: 1px solid #f2f2f2;
+}
+.gdrivefile {
+  background: #fff;
+  border-top: 1px solid #f2f2f2;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gdrivefile .file-meta {
+  float: right;
+}
+
+.gdrivefile .file-meta .date {
+  font-size: 10px;
+  font-weight: 300;
+  color: #9b9b9b;
+  margin-top: 4px;
+  display: none;
+}
+
+.gdrivefile .gdriveactions {
+  position: absolute;
+  background: #fafafa;
+  top: 12px;
+  right: 12px;
+  display: none;
+}
+
+.gdriveactions a.delete {
+  display: none;
+}
+.gdriveactions a {
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.gdriveactions a:last-child {
+  margin-right: 0;
+}
+.gdriveactions a {
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.gdrivefile .iconHolder {
+  vertical-align: top;
+  padding-top: 3px;
+  margin-right: 12px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.gdrivefile .iconHolder .icon {
+  cursor: pointer;
+}
+
+.gdrivefile a.title {
+  display: block;
+  font-size: 13px;
+  color: #626262;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+}
+
+.gdrivefile h4.modified {
+  font-size: 11px;
+  font-weight: 400;
+  color: #9b9b9b;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.gdrivefile h5.ownerName {
+  font-size: 11px;
+  font-weight: 400;
+  color: #9b9b9b;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  cursor: default;
+  margin-top: 4px;
+  display: none;
+}

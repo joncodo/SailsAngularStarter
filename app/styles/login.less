@@ -1,0 +1,282 @@
+.login{
+  display: block;
+  width: 320px;
+
+  .setting:last-child {
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .setting:hover .detail-container {
+    height: 36px;
+    opacity: 1;
+  }
+
+  .setting:hover .detail-container {
+    height: 36px;
+    opacity: 1;
+  }
+
+  .setting:hover.workplayEnabled .detail-container, .setting:hover.contextualEnabled .detail-container {
+    height: 60px;
+  }
+
+  .setting:hover.workplayEnabled .profile, .login .setting:hover.contextualEnabled .profile {
+    display: flex;
+  }
+
+  .setting:hover.workplayEnabled .detail-container, .login .setting:hover.contextualEnabled .detail-container {
+    height: 60px;
+  }
+
+  .setting {
+    background: #fff;
+    border-top: 1px solid #f2f2f2;
+    padding: 12px;
+    overflow: hidden;
+
+    input.switch:empty:after {
+      top: 0;
+      left: 3px;
+      bottom: .1em;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #fff;
+      box-shadow: 0 0 2px 0 rgba(0,0,0,0.12),0px 2px 2px 0 rgba(0,0,0,0.24);
+    }
+
+    .contextual {
+      display: none;
+      position: relative;
+    }
+
+    .detail-container {
+
+      background: #fafafa;
+      height: 0;
+      border-top: 1px solid #f2f2f2;
+      margin: 16px -12px -12px -12px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 10px;
+      opacity: 0;
+      transition: all .3s;
+
+      .bdsft-checkbox input:checked+label:before {
+        content: "\e619";
+      }
+
+      .bdsft-checkbox {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        flex-shrink: 0;
+      }
+
+      .bdsft-checkbox:first-child {
+        margin-left: -8px;
+        margin-right: 16px;
+      }
+
+      .bdsft-checkbox label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+
+      .bdsft-checkbox input:checked+label:before {
+        content: "\e619";
+      }
+
+      .profile {
+        display: none;
+        align-items: center;
+
+        i {
+          color: #9b9b9b;
+          font-size: 16px;
+          margin-right: 4px;
+        }
+
+        .username {
+          max-width: 182px;
+          font-size: 12px;
+          line-height: 12px;
+          color: #9b9b9b;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-user-select: none;
+        }
+
+        .logout {
+          font-size: 12px;
+          line-height: 12px;
+          color: #03afef;
+          position: relative;
+          padding-left: 8px;
+          margin-left: 6px;
+        }
+      }
+
+      .bdsft-checkbox input {
+        opacity: 0;
+
+        label span {
+          margin-right: 8px;
+        }
+
+        label:before {
+          order: 2;
+          font-family: 'wp-icons';
+          font-size: 16px;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: "\e618";
+        }
+
+        input:checked+label:before {
+          content: "\e619";
+        }
+
+      }
+
+      .bdsft-checkbox label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+    }
+
+    .toggle-button {
+      position: relative;
+      margin-left: -88px;
+
+      input:empty {
+        margin-left: -999px;
+      }
+
+      input:checked:after {
+        left: 20px;
+        background-color: #03afef;
+        border-color: #03afef;
+      }
+
+      input:checked:before {
+        background-color: #cacaca;
+      }
+
+      input:empty:before {
+        top: 4px;
+        left: 4px;
+        width: 34px;
+        height: 10px;
+        background-color: #cacaca;
+        border-radius: 15px;
+      }
+
+      input:empty:before, input:empty:after {
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        content: ' ';
+        -webkit-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+      }
+
+    }
+
+    .workplay, .login .setting .contextual {
+      position: relative;
+    }
+
+    .content-container {
+      display: flex;
+      align-items: center;
+      align-content: center;
+
+      .settings-text {
+        width: 100%;
+        margin-left: 6px;
+
+        .name {
+          font-size: 14px;
+          color: #626262;
+          font-weight: 500;
+          margin: 0 0 4px 0;
+          display: inline-block;
+        }
+
+        .setting-price {
+          display: inline-block;
+          border: 1px solid #7bc043;
+          border-radius: 2px;
+          color: #7bc043;
+          font-size: 9px;
+          padding: 0 3px;
+          font-weight: 300;
+          vertical-align: middle;
+          margin-top: -3px;
+          margin-left: 4px;
+        }
+
+        .launch {
+          font-size: 10px;
+          font-weight: 600;
+          color: #03afef;
+        }
+      }
+    }
+  }
+
+  .icon-user:before {
+    content: "\e614";
+  }
+}
+
+@media screen and (min-width: 1px) and (max-device-width: 590px) {
+  .login{
+    width: 100%;
+  }
+}
+
+.apps [class^="icon-"], .apps [class*=" icon-"] {
+  font-family: 'wp-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bdsft-checkbox label:before {
+  order: 2;
+  font-family: 'wp-icons';
+  font-size: 16px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e618";
+}
+
+

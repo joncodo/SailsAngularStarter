@@ -1,0 +1,27 @@
+{
+  "name": "SailsAngularStarter",
+  "description": "a Sails Angular application",
+  "main": "app.js",
+  "authors": [
+    "jodonnell"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "html5-boilerplate": "~5.2.0",
+    "underscore": "~1.8.3"
+  }
+}

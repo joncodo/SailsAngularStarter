@@ -1,0 +1,30 @@
+<div class="searchHolder">
+  <i class="icon-search"></i>
+  <input type="text" placeholder="BroadSearch" class="search input">
+</div>
+
+<div class="itemsContent">
+  <div class="recent item">Recent</div>
+  <div class="shared item">Shared With Me</div>
+</div>
+
+<div class="gdrivefiles">
+  <div ng-repeat="item in internal.items" class="gdrivefile owner recent">
+    <div class="bdsft-wp">
+      <div class="gdriveactions">
+        <a title="Launch" class="launch">
+          <i class="icon-external-link"></i>
+        </a>
+      </div>
+    </div>
+    <div class="iconHolder">
+      <img class="icon" src="https://ssl.gstatic.com/docs/doclist/images/icon_11_document_list.png">
+      <!--<img class="icon" src="https://ssl.gstatic.com/docs/doclist/images/icon_10_word_list.png">-->
+    </div>
+    <div class="textHolder">
+      <a class="title">{{item.title}}</a>
+      <h4 class="modified">Modified: {{item.modifiedDate | date}}</h4>
+      <h5 class="ownerName">Owner: {{item.owners[0].displayName}}</h5>
+    </div>
+  </div>
+</div>

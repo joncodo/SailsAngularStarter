@@ -1,0 +1,17 @@
+.idea/*
+config/local.js
+.tmp
+dump.rdb
+lib-cov
+*.seed
+*.log
+*.out
+*.pid
+npm-debug.log
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.node_history
