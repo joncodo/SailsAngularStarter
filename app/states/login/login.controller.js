@@ -11,6 +11,8 @@
   });
 
   angular.module('gDrive').controller('loginCtrl', function ($scope, $http) {
-
+    $scope.testAngular = function(){
+      $scope.myVar = 'Hello World Angular!';
+    };
   });
 })();

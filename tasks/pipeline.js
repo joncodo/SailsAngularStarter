@@ -8,8 +8,6 @@
  * for matching multiple files.)
  */
 
-
-
 // CSS files to inject in order
 //
 // (if you're using LESS with the built-in default config, you'll want
@@ -17,7 +15,6 @@
 var cssFilesToInject = [
   'styles/**/*.css'
 ];
-
 
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
@@ -33,7 +30,6 @@ var jsFilesToInject = [
   'states/**/*.controller.js'
 ];
 
-
 // Client-side HTML templates are injected using the sources below
 // The ordering of these templates shouldn't matter.
 // (uses Grunt-style wildcard/glob/splat expressions)
@@ -44,10 +40,9 @@ var jsFilesToInject = [
 // templates get spit out to the same file.  Be sure and check out `tasks/README.md`
 // for information on customizing and installing new tasks.
 var templateFilesToInject = [
-  'states/**/*.html'
+  'states/**/*.html',
+  'states/**/*.jade'
 ];
-
-
 
 // Prefix relative paths to source files so they point to the proper locations
 // (i.e. where the other Grunt tasks spit them out, or in some cases, where

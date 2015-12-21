@@ -1,4 +1,4 @@
 module.exports.models = {
-  connection: 'localhost',
+  connection: 'localDiskDb',
   migrate: 'alter'
 };
