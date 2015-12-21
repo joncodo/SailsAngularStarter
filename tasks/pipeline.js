@@ -13,7 +13,8 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `app/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/**/*.css'
+  'styles/**/*.css',
+  'styles/**/*.styl'
 ];
 
 // Client-side javascript files to inject in order

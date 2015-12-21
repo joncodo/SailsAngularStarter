@@ -17,7 +17,7 @@ module.exports.models = {
    * connections (see `config/connections.js`)                                *
    *                                                                          *
    ***************************************************************************/
-  connection: 'production',
+  connection: 'localDiskDb',
   port: 8080,
 
   /***************************************************************************
