@@ -1,4 +1,6 @@
 .idea/*
+node_modules
+app/bower_components
 config/local.js
 .tmp
 dump.rdb
