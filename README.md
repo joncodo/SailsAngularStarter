@@ -1,4 +1,4 @@
-# Hub/Gdrive refactor
+# Sails Angular Starter
 
 a [Sails](http://sailsjs.org) application
 
