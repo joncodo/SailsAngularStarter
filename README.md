@@ -16,13 +16,13 @@ Create a file called local.js in /config
 There is a sample one at /config/local.example
 
 ```
-npm i -g sails
+npm i -g sails bower
 npm i
 bower install
 mongod
 sails lift
 
-Check terminal to see where your app is running.
+Your app will be running on http://localhost:1337
 ```
 
 ## What it does
@@ -53,25 +53,8 @@ Check terminal to see where your app is running.
 - Watch task to auto build on changes (done)
 - Populate Index.html automatically (done)
 
-## Tasks
-
-- Refresh token
-- Use Icon font
-- Full test to make sure its the exact same.
-- Fully documented (done)
-
 ## Full list of what techs we use?
 
 - Mongo, SailsJs, Anguar, Ui-Router, Grunt, Underscore.js
 - Passport oauth setup = https://www.youtube.com/watch?v=WXNsNchK74M
 - Have a look in the package.json and bower.json file for more.
-
-## Load times comparison
-
-## Lines of code comparison
-
-## Onboarding of a new person comparison
-
-## todo
-
-- Get the image font working.
