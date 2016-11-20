@@ -19,39 +19,35 @@ There is a sample one at /config/local.example
 npm i -g sails bower
 npm i
 bower install
-mongod
 sails lift
 
 Your app will be running on http://localhost:1337
 ```
 
+If using Mongo, run this in another terminal window...
+
+```
+mongod &
+```
+
 ## What it does
 
-- Modern web standards (done)
-- Development mode and prod mode not just prod files (done)
-- File generators (done)
-- Local database and production database support (done)
-- Self contained project (done)
-- Bower used for front end dependencies (done)
-- AngularJs for the front end (done)
-- SailsJs for the back end (done)
-- No reliance on any of the Library-sdk code (done)
-- No reliance on any other projects that we built (done)
-- Grunt and not Make (done)
-- Mongo database (done)
-- Passport is used to manage oauth (done)
-- Its hosted on private github and not behind a vpn model (done)
-- JSCS and JShint (done)
-- Easier workflow (done)
-- Grunt ng-annotate (done)
-- Less (done)
-- File names in camelCase (done)
-- Variables in camelCase (done)
-- Clean up the HTML and css (done but could be better)
-- grunt check my code (done)
-- Unit and integration tests (done)
-- Watch task to auto build on changes (done)
-- Populate Index.html automatically (done)
+- Development mode and prod mode not just prod files
+- File generators
+- Local database and production database support
+- Bower used for front end dependencies
+- NPM for back end dependencies
+- AngularJs 1.x for the front end
+- SailsJs for the back end
+- Grunt
+- Passport is used to manage oauth
+- JSCS and JShint
+- Grunt ng-annotate
+- Less
+- Clean up the HTML and css
+- Unit and integration tests
+- Watch task to auto build on changes
+- Populate Index.html automatically
 
 ## Full list of what techs we use?
 
